@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="/multimedia/imagenes/logioto.jpg" type="image/x-icon">
     <title >AROMAS KIM</title>
@@ -12,7 +13,7 @@
 <body>
     <header>
         <nav class="navegador">
-            <img src="./multimedia/imagenes/logo.png" alt="logo">
+            <img class="logo" src="./multimedia/imagenes/logo.png" alt="logo">
             <ul>
                 <li><a href="./index.html">INICIO</a></li>
                 <li><a href="./index.html">PRODUCTOS</a></li>
@@ -22,6 +23,7 @@
     </header>
 
     <main>
+     
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -43,13 +45,54 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <div>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, officiis iure esse impedit ut et natus ad optio, a architecto eligendi tempora ea ducimus cum pariatur doloremque, autem porro quasi!</h3>
+          
+      <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="text-inicio">¡VISITÁ NUESTROS PRODUCTOS!</h2>
+      <section class="productos">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="tarjetas">
+          <img src="./multimedia/imagenes/logioto.jpg" alt="">
+          <h3>NOMBRE DEL PRODUCTO</h3>
+          <button>COMPRAR</button>
         </div>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="tarjetas">
+          <img src="./multimedia/imagenes/logioto.jpg" alt="">
+          <h3>NOMBRE DEL PRODUCTO</h3>
+          <button>COMPRAR</button>
+        </div>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="tarjetas">
+          <img src="./multimedia/imagenes/logioto.jpg" alt="">
+          <h3>NOMBRE DEL PRODUCTO</h3>
+          <button>COMPRAR</button>
+        </div>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="tarjetas">
+          <img src="./multimedia/imagenes/logioto.jpg" alt="">
+          <h3>NOMBRE DEL PRODUCTO</h3>
+          <button>COMPRAR</button>
+        </div>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="tarjetas">
+          <img src="./multimedia/imagenes/logioto.jpg" alt="">
+          <h3>NOMBRE DEL PRODUCTO</h3>
+          <button>COMPRAR</button>
+        </div>
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="tarjetas">
+          <img src="./multimedia/imagenes/logioto.jpg" alt="">
+          <h3>NOMBRE DEL PRODUCTO</h3>
+          <button>COMPRAR</button>
+        </div>
+      </section>
+      <section class="nosotros">
+        <h2 data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="text-inicio">¡CONOCENOS!</h2>
+         <p data-aos="fade-up"
+         data-aos-anchor-placement="bottom-bottom">Hace dos años, comenzamos nuestro viaje en el mundo de las velas aromáticas con un sueño: crear momentos de serenidad y bienestar para todos.<br> Desde entonces, hemos perfeccionado el arte de combinar fragancias cautivadoras con diseños elegantes.<br>  Cada vela es un testimonio de nuestro compromiso con la calidad y la tranquilidad. <br> Hoy, compartimos con orgullo nuestras velas aromáticas, que han iluminado y perfumado innumerables hogares, transformando espacios en refugios de paz y armonía. <br> ¡Únete a nuestra historia y enciende tu experiencia aromática hoy mismo!</p>
+      </section>
     </main>
+    
     <footer>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
