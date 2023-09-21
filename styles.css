@@ -46,7 +46,12 @@
         flex-wrap: wrap;
         width: 150px;
     }
-    
+    .navegador ul li a{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: small;
+        padding: 0;
+    }
 }
 .carousel-inner{
     height: auto;
@@ -140,6 +145,64 @@
         width: 180px;
         display: flex;
         flex-wrap: wrap;
+        font-size: small;
+    }
+}
+.row{
+    width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pie{
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+}
+.pie .descrip{
+    margin: 20px;
+    padding: 15px;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.pie .redes{
+    font-size: 35px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 550px;
+    margin: 15px;
+}
+@media(max-width:760px){
+    .pie .mapa{
+        display: none;
+    }
+    .pie {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .pie .descrip{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 250px;
+        font-size: small;
+    }
+    .pie .redes{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 250px;
         font-size: small;
     }
 }
