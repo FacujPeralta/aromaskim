@@ -181,11 +181,16 @@
     width: 550px;
     margin: 15px;
 }
+.pie .fa-brands{
+    font-size: 50px;
+}
 @media(max-width:760px){
     .pie .mapa{
         display: none;
     }
     .pie {
+        padding: 0px;
+        gap: 5px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -195,14 +200,18 @@
         flex-wrap: wrap;
         flex-direction: column;
         width: 250px;
-        font-size: small;
+        font-size: 20px;
+        padding: 0px;
     }
     .pie .redes{
-        padding: 20px;
+        padding:10px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         width: 250px;
-        font-size: small;
+        font-size: 30px;
+    }
+    .pie .fa-brands{
+        font-size: 25px;
     }
 }
