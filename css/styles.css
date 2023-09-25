@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navegador {
+  padding: 20px;
+  background-color: #DAC0A3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.navegador ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  margin: 15px;
+}
+.navegador ul li a {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+.navegador ul li a:hover {
+  color: black;
+  background-color: #DAC0A3;
+}
+.navegador img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  justify-content: center;
+}
+
+@media (max-width: 780px) {
+  .navegador img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+  }
+  .navegador ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+    padding: 0;
+  }
+}
+.carousel-inner {
+  height: auto;
+  background-size: cover;
+}
+
+.text-inicio {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: glacial_indifferenceregular;
+}
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5%;
+  padding: 15px;
+}
+.productos .tarjetas {
+  margin: 4%;
+  padding: 15px;
+  border: 2px solid black;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  background-color: #ebebeb;
+  gap: 30px;
+}
+.productos .tarjetas h3 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  align-self: center;
+}
+.productos .tarjetas img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  transition: 0.3s;
+  align-self: center;
+}
+.productos .tarjetas button {
+  padding: 10px 10px;
+  background-color: bisque;
+  border-radius: 5px;
+}
+.productos .tarjetas button:hover {
+  background-color: rgb(249, 209, 161);
+}
+
+@media (max-width: 780px) {
+  .tarjetas {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .tarjetas img {
+    width: 180px;
+  }
+  .tarjetas button {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+  }
+}
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.nosotros p {
+  margin: 20px auto;
+  width: 1200px;
+  font-size: 50px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #F8F0E5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 780px) {
+  .nosotros p {
+    width: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: small;
+  }
+}
+.row {
+  width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pie {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+}
+.pie .descrip {
+  margin: 20px;
+  padding: 15px;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.pie .redes {
+  font-size: 35px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 550px;
+  margin: 15px;
+}
+.pie .fa-brands {
+  font-size: 50px;
+}
+
+@media (max-width: 760px) {
+  .pie .mapa {
+    display: none;
+  }
+  .pie {
+    padding: 0px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .pie .descrip {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+    font-size: 20px;
+    padding: 0px;
+  }
+  .pie .redes {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    font-size: 30px;
+  }
+  .pie .fa-brands {
+    font-size: 25px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
