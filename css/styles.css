@@ -111,7 +111,9 @@
 
 @media (max-width: 780px) {
   .tarjetas {
-    width: 350px;
+    width: 250px;
+    padding: 0px;
+    margin: 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -125,6 +127,11 @@
     text-align: center;
     align-self: center;
     background-color: white;
+  }
+  .tarjetas h3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 .nosotros {
