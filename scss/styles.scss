@@ -115,20 +115,22 @@
 }
 @media(max-width:780px){
     .ingreso-ventas{
-        width: 250px;
+        width: 300px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin: 5px;
         padding: 10px;
         .cuadradito{
+            gap: 20px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             padding: 10px;
             justify-content: center;
             img{
-                width: 200px;
+                padding: 10px;
+                width: 250px;
                 display: flex;
                 flex-wrap: wrap;
             }
@@ -142,6 +144,16 @@
                 flex-wrap: wrap;
                 font-size: x-small;
             }
+            button{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                list-style: none;
+                text-decoration: none;
+                margin: 10px auto;
+                align-self: center;
+            }
         }
     }
 }
@@ -149,10 +161,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 5%;
+    margin: 25px;
     padding: 15px;
     .tarjetas{
-        margin: 10%;
+        margin: 30px;
         padding: 15px;
         border: 2px solid black;
         width: 500px;
@@ -201,16 +213,18 @@
     display: flex;
     flex-wrap: wrap;
         .tarjetas{
-            width: 250px;
+            width: 300px;
             padding: 0px;
             margin: 5px;
             display: flex;
             flex-wrap: wrap;
+            gap: 20px;
             flex-direction: column;
             img{
+                padding: 10px;
                 display: flex;
                 flex-wrap: wrap;
-                width:200px;
+                width:250px;
                 }
             button{
                 display: flex;
@@ -281,7 +295,7 @@
         flex-wrap: wrap;
     }
     .redes{
-        font-size: 35px;
+        font-size: 30px;
         gap: 50px;
         display: flex;
         flex-direction: column;

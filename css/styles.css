@@ -118,7 +118,7 @@
 
 @media (max-width: 780px) {
   .ingreso-ventas {
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -126,6 +126,7 @@
     padding: 10px;
   }
   .ingreso-ventas .cuadradito {
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -133,7 +134,8 @@
     justify-content: center;
   }
   .ingreso-ventas .cuadradito img {
-    width: 200px;
+    padding: 10px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -147,16 +149,26 @@
     flex-wrap: wrap;
     font-size: x-small;
   }
+  .ingreso-ventas .cuadradito button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    margin: 10px auto;
+    align-self: center;
+  }
 }
 .productos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 5%;
+  margin: 25px;
   padding: 15px;
 }
 .productos .tarjetas {
-  margin: 10%;
+  margin: 30px;
   padding: 15px;
   border: 2px solid black;
   width: 500px;
@@ -204,17 +216,19 @@
     flex-wrap: wrap;
   }
   .productos .tarjetas {
-    width: 250px;
+    width: 300px;
     padding: 0px;
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     flex-direction: column;
   }
   .productos .tarjetas img {
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: 250px;
   }
   .productos .tarjetas button {
     display: flex;
@@ -283,7 +297,7 @@
   flex-wrap: wrap;
 }
 .pie .redes {
-  font-size: 35px;
+  font-size: 30px;
   gap: 50px;
   display: flex;
   flex-direction: column;
