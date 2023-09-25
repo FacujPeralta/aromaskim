@@ -42,15 +42,23 @@
 @media(max-width:780px){
     .navegador{
          img{
-        display: flex;
-        flex-wrap: wrap;
-        width: 150px;
+        display: none;
         }
-        ul li a{
+        ul {
         display: flex;
+        padding: 10px;
+        flex-direction: column;
         flex-wrap: wrap;
-        font-size: small;
-        padding: 0;
+            li a{
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                align-self: center;
+                display: flex;
+                flex-wrap: wrap;
+                font-size: small;
+                padding: 0;
+                }
         }
     }
 }
@@ -63,7 +71,79 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: glacial_indifferenceregular;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.ingreso-ventas{
+    margin: 35px;
+    padding: 10%;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    flex-wrap: wrap;
+    justify-content:start;
+    .wtp{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+    .cuadradito{
+        margin: 15px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        border: 1px solid black;
+        gap: 30px;
+        img{
+            width: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid bisque;
+            align-self: center;
+        }
+        h4{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}
+@media(max-width:780px){
+    .ingreso-ventas{
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 5px;
+        padding: 10px;
+        .cuadradito{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 10px;
+            justify-content: center;
+            img{
+                width: 200px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            h4{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: x-small;
+            }
+            p{
+                display: flex;
+                flex-wrap: wrap;
+                font-size: x-small;
+            }
+        }
+    }
 }
 .productos{
     display: flex;
@@ -72,10 +152,10 @@
     margin: 5%;
     padding: 15px;
     .tarjetas{
-        margin: 4%;
+        margin: 10%;
         padding: 15px;
         border: 2px solid black;
-        width: 450px;
+        width: 500px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -83,21 +163,27 @@
         text-align: center;
         background-color: #ebebeb;
         gap: 30px;
+        list-style: none;
+        text-decoration: none;
         h3{
             display: flex;
             flex-wrap: wrap;
             font-size: 25px;
             align-self: center;
+            color: black;
+            list-style: none;
+            text-decoration: none;
         }
         img{
             display: flex;
             flex-wrap: wrap;
-            width: 300px;
-            transition: 0.3s;
+            width: 350px;
             align-self: center;
             
         }
         button{
+            list-style: none;
+            text-decoration: none;
             padding: 10px 10px;
             background-color: bisque;
             border-radius: 5px;
@@ -109,30 +195,40 @@
     }
 }
 @media(max-width:780px){
-    .tarjetas{
-        width: 250px;
-        padding: 0px;
-        margin: 5px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        img{
-            width: 180px;
-        }
-        button{
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-            align-self: center;
-            background-color: white;
-        }
-        h3{
+    .productos{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+        .tarjetas{
+            width: 250px;
+            padding: 0px;
+            margin: 5px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-        }
+            img{
+                display: flex;
+                flex-wrap: wrap;
+                width:200px;
+                }
+            button{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                align-self: center;
+                margin: 10px;
+                background-color: white;
+                }
+            h3{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                }
+            }
     }
 }
+
 .nosotros{
     display: flex;
     flex-direction: column;
@@ -152,11 +248,13 @@
     }
 }
 @media(max-width:780px){
-    .nosotros p{
-        width: 180px;
+    .nosotros{
+        p{
+        width: 280px;
         display: flex;
         flex-wrap: wrap;
-        font-size: small;
+        font-size: x-small;
+        }
     }
 }
 .row{
@@ -205,24 +303,24 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-    }
-    .pie .descrip{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 250px;
-        font-size: 20px;
-        padding: 0px;
-    }
-    .pie .redes{
-        padding:10px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 250px;
-        font-size: 30px;
-    }
-    .pie .fa-brands{
-        font-size: 25px;
+        .descrip{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 250px;
+            font-size: 20px;
+            padding: 0px;
+        }
+        .redes{
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 250px;
+            font-size: 30px;
+        }
+        .fa-brands{
+            font-size: 35px;
+        }
     }
 }
