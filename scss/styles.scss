@@ -9,7 +9,20 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    .carrito{
+        background-image: url(../multimedia/imagenes/carrito.png);
+        width: 90px;
+        height: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        background-size: cover;
+        cursor: pointer;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
     ul{
+        align-items: center;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -206,6 +219,7 @@
         
     }
 }
+
 @media(max-width:780px){
     .productos{
     margin: 10px;
@@ -293,6 +307,8 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 60px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .redes{
         font-size: 30px;

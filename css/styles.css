@@ -11,7 +11,20 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.navegador .carrito {
+  background-image: url(../multimedia/imagenes/carrito.png);
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 .navegador ul {
+  align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -295,6 +308,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 60px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .pie .redes {
   font-size: 30px;
