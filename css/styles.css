@@ -63,6 +63,7 @@
     padding: 10px;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .navegador ul li a {
     justify-content: center;
@@ -179,6 +180,7 @@
   flex-wrap: wrap;
   margin: 25px;
   padding: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .productos .tarjetas {
   margin: 30px;
@@ -229,9 +231,9 @@
     flex-wrap: wrap;
   }
   .productos .tarjetas {
-    width: 300px;
+    width: 250px;
     padding: 0px;
-    margin: 5px;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -241,13 +243,14 @@
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    width: 250px;
+    width: 200px;
   }
   .productos .tarjetas button {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     align-self: center;
+    font-size: x-small;
     margin: 10px;
     background-color: white;
   }
@@ -278,7 +281,7 @@
 
 @media (max-width: 780px) {
   .nosotros p {
-    width: 280px;
+    width: 150px;
     display: flex;
     flex-wrap: wrap;
     font-size: x-small;
@@ -330,7 +333,6 @@
   }
   .pie {
     padding: 0px;
-    gap: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -339,17 +341,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 250px;
-    font-size: 20px;
-    padding: 0px;
+    width: 200px;
+    font-size: small;
   }
   .pie .redes {
-    padding: 10px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 250px;
-    font-size: 30px;
+    width: 200px;
+    font-size: small;
   }
   .pie .fa-brands {
     font-size: 35px;
