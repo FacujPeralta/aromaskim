@@ -1,65 +1,28 @@
-$(document).ready(function() {
-    var slides = $('.slide');
-    var currentSlide = 0;
-  
-    function showSlide(index) {
-      slides.removeClass('active');
-      slides.eq(index).addClass('active');
-    }
-  
-    $('.next').click(function() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    });
-  
-    $('.prev').click(function() {
-      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-      showSlide(currentSlide);
-    });
-  });
+//Vincular el boton con el id que le pusimos al boton
+const BTN = document.getElementById("btn");
 
-  // Ejemplo básico de manejo de productos en JavaScript
-var productos = [
-  {
-    id: 1,
-    nombre: "Producto 1",
-    precio: 10
-  },
-  {
-    id: 2,
-    nombre: "Producto 2",
-    precio: 15
-  },
-  // Agrega más productos aquí
-];
+//Luego utilizamos un metodo de JS AddEventListener => Lo usamos para registrar un controlador de eventos en un objeto especifico (Este caso, el voton)
+//El elemento que va a controlar, es un elemento del DOM
 
-var carrito = [];
+//Sintaxis básica de AddEventListener 
 
-function agregarAlCarrito(id) {
-  var producto = productos.find(function(item) {
-    return item.id === id;
-  });
+// elemento.addEventListener(evento, function) => (El evento va a ser referencia a la acción que se ejecuta en ese momento / funcion va a ejecutar que se tiene que producir)
 
-  carrito.push(producto);
-  // Actualiza la vista del carrito y el total
-}
-
-function actualizarCarrito() {
-  // Actualiza la vista del carrito de compras
-}
-
-function calcularTotal() {
-  // Calcula el total de la compra
-}
-
-// Escucha eventos de clic para agregar productos al carrito
-document.addEventListener("click", function(event) {
-  if (event.target.classList.contains("agregar-al-carrito")) {
-    var productId = parseInt(event.target.dataset.productId);
-    agregarAlCarrito(productId);
-    actualizarCarrito();
-    calcularTotal();
-  }
+BTN.addEventListener(`click`, function(){
+  alert("Se agrego al carrito");
 });
 
-  
+//Segundo método, utilizamos las propiedades del NODO
+
+const BTN2 = document.getElementById("btn2");
+
+BTN2.onclick = () => {
+  alert("Se agrego al carrito");
+}
+
+//Tercer metodo escribiendo funciones en el HTML
+
+function jsEnHtml(){
+  alert("Estamos llamando una funcion desde HTML")
+};
+
